@@ -2,12 +2,6 @@
 
   <header class="page-header">
     <h1>Order <%= @order.id %></h1>
-
-    <h2><%= @order.line_items[1].order_id %></h2>
-    <h2><%= @order.line_items[1].product_id %></h2>
-    <h2><%= @order.line_items[1].quantity %></h2>
-    <h2><%= @order.line_items[1].item_price_cents %></h2>
-
   </header>
 
   <div class="order-summary jumbotron">
@@ -15,16 +9,16 @@
     <table class="table table-striped">
       <thead>
         <tr>
-          <th scope="col">Product Description</th>
-          <th scope="col">Quantity</th>
+          <th colspan="2">Product Description</th>
           <th scope="col">Unit Price</th>
+          <th scope="col">Quantity</th>
           <th scope="col">Total Price</th>
         </tr>
       </thead>
       <tbody>
           <% @order.line_items.each do |item| %>
             <% p item %>
-            <%= render 'item', product: item[:product], quantity: item[:quantity].to_i %>
+            <%= render 'item', product: item.product, quantity: item[:quantity].to_i %>
           <% end %>
       </tbody>
       <tfoot>
