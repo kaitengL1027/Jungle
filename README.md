@@ -2,7 +2,14 @@
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
 ## Final Product
-
+### Product Page
+!["Screenshot of product page"](https://github.com/kaitengL1027/Jungle/blob/master/products.png?raw=true)
+### Cart Page
+!["Screenshot of cart page"](https://github.com/kaitengL1027/Jungle/blob/master/cart.png?raw=true)
+### Admin Login
+!["Screenshot of admin login"](https://github.com/kaitengL1027/Jungle/blob/master/admin_authenticate.png?raw=true)
+### Admin Product Management Page
+!["Screenshot of admin product management page"](https://github.com/kaitengL1027/Jungle/blob/master/admin_products.png?raw=true)
 
 ## Setup
 
